@@ -8,7 +8,7 @@ pipeline {
         stage('build and push') {
             steps { 
                     sh"sudo docker build -t aymenchab/apptest:1.0 ."                  
-                    withDockerRegistry([url: "", credentialsId: "dockerhub-id"]) {
+                    withDockerRegistry([url: "", credentialsId: "4a93d596-7aea-4b4a-8cd6-b943dc482a36"]) {
                         sh"docker push aymenchab/apptest:1.0"
                 }
             }
