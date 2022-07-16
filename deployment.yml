@@ -5,7 +5,9 @@ metadata:
   labels:
     app: nodeapp
 spec:
-  replicas: 1
+  replicas: 2
+  strategy: 
+    type: RollingUpdate 
   selector:
     matchLabels:
       app: nodeapp
@@ -13,9 +15,9 @@ spec:
     metadata:
       labels:
         app: nodeapp 
+        env: prod
     spec:
       containers:
       - name: nodeserver
         image: aymenchab/apptest:1.0
-        ports:
-        - containerPort: 3500
+
