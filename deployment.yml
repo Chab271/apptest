@@ -2,8 +2,6 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: nodeapp-deployment
-  labels:
-    app: nodeapp
 spec:
   replicas: 2
   strategy: 
