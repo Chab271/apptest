@@ -12,4 +12,4 @@ spec:
     protocol: TCP
     port: 3500
     targetPort: 3500
-    nodePort: 11000
+    nodePort: 30001
