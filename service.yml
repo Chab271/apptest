@@ -3,11 +3,13 @@ kind: Service
 metadata:
   name: nodeapp-service
 spec:
+  type: NodePort
   selector:
     app: nodeapp 
-  type: NodePort
+    env: prod
   ports:
-  - protocol: TCP
+  - name: test2
+    protocol: TCP
     port: 5000
     targetPort: 3500
     nodePort: 32123
