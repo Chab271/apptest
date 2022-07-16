@@ -10,6 +10,6 @@ spec:
   ports:
   - name: test2
     protocol: TCP
-    port: 5000
+    port: 3500
     targetPort: 3500
-    nodePort: 32123
+    nodePort: 11000
