@@ -8,7 +8,7 @@ spec:
     app: nodeapp 
     env: prod
   ports:
-  - name: test2
+  - name: test3
     protocol: TCP
     port: 3000
     targetPort: 3000
